@@ -1,0 +1,55 @@
+import type { Product } from "@/types/product"
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "The Untold Story",
+    description: "Handcrafted dark wood chair with artisanal joinery.",
+    price: 850,
+    image: "/minimalist-furniture-dark-wood.jpg",
+    category: "Furniture",
+    isFeatured: true,
+  },
+  {
+    id: 2,
+    name: "Optimal Framework",
+    description: "Modular shelving system for modern organization.",
+    price: 1200,
+    image: "/modern-closet-design.jpg",
+    category: "Storage",
+    isFeatured: true,
+  },
+  {
+    id: 3,
+    name: "Stellar Products",
+    description: "Curated luxury decor items for sophisticated spaces.",
+    price: 450,
+    image: "/luxury-home-decor.jpg",
+    category: "Decor",
+    isFeatured: true,
+  },
+  {
+    id: 4,
+    name: "Artisan Vessel",
+    description: "Ceramic piece hand-thrown by master potters.",
+    price: 220,
+    image: "/luxury-ceramic-vase.jpg",
+    category: "Decor",
+  },
+  {
+    id: 5,
+    name: "Linear Sofa",
+    description: "Minimalist seating with premium velvet upholstery.",
+    price: 3400,
+    image: "/minimalist-velvet-sofa.jpg",
+    category: "Furniture",
+  },
+  {
+    id: 6,
+    name: "Eclipse Light",
+    description: "Sculptural lighting fixture inspired by celestial events.",
+    price: 890,
+    image: "/sculptural-pendant-light.jpg",
+    category: "Lighting",
+  },
+]
