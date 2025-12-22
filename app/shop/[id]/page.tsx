@@ -6,13 +6,20 @@ import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
-export default async function ProductDetailsPage({ params }: { params: { id: number } }) {
-  const product = products.find((p) => (p.id) === params.id)
+type PageProps = {
+  params: Promise<{ id: string }>
+}
+
+
+export default async function ProductDetailsPage({ params }: PageProps) {
+  const { id } = await params 
+  const productId = (id)
+
+  const product = products.find((p) => p.id === (productId))
 
   if (!product) {
     notFound()
   }
-  console.log("product ID", product)
   return (
     <main className="min-h-screen bg-background">
       <Navbar />

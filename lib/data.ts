@@ -2,7 +2,7 @@ import type { Product } from "@/types/product"
 
 export const products: Product[] = [
   {
-    id: 1,
+    id: "1",
     name: "The Untold Story",
     description: "Handcrafted dark wood chair with artisanal joinery.",
     price: 850,
@@ -11,7 +11,7 @@ export const products: Product[] = [
     isFeatured: true,
   },
   {
-    id: 2,
+    id: "2",
     name: "Optimal Framework",
     description: "Modular shelving system for modern organization.",
     price: 1200,
@@ -20,7 +20,7 @@ export const products: Product[] = [
     isFeatured: true,
   },
   {
-    id: 3,
+    id: "3",
     name: "Stellar Products",
     description: "Curated luxury decor items for sophisticated spaces.",
     price: 450,
@@ -29,7 +29,7 @@ export const products: Product[] = [
     isFeatured: true,
   },
   {
-    id: 4,
+    id: "4",
     name: "Artisan Vessel",
     description: "Ceramic piece hand-thrown by master potters.",
     price: 220,
@@ -37,7 +37,7 @@ export const products: Product[] = [
     category: "Decor",
   },
   {
-    id: 5,
+    id: "5",
     name: "Linear Sofa",
     description: "Minimalist seating with premium velvet upholstery.",
     price: 3400,
@@ -45,7 +45,7 @@ export const products: Product[] = [
     category: "Furniture",
   },
   {
-    id: 6,
+    id: "6",
     name: "Eclipse Light",
     description: "Sculptural lighting fixture inspired by celestial events.",
     price: 890,

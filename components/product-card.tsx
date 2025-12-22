@@ -28,7 +28,6 @@ export function ProductCard({ product }: ProductCardProps) {
     e.preventDefault()
     e.stopPropagation()
     router.push(`/shop/${product?.id}`)
-    console.log("[v0] Navigating to details page for:", product.name)
   }
 
   return (
