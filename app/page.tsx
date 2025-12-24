@@ -7,8 +7,6 @@ import Image from "next/image"
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
-      <Navbar />
-
       {/* Hero Section */}
       <section className="relative h-screen flex flex-col items-center justify-center px-6 pt-20 text-center overflow-hidden">
         <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000">

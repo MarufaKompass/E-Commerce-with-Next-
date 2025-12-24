@@ -7,7 +7,7 @@ import { ProductCard } from "@/components/product-card"
 export default function ShopPage() {
   return (
     <main className="min-h-screen bg-background">
-      <Navbar />
+      {/* <Navbar /> */}
 
       <section className="px-6 pt-32 pb-16">
         <div className="max-w-7xl mx-auto">
