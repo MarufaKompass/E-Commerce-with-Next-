@@ -1,5 +1,5 @@
 import { products } from "@/lib/data"
-import { Navbar } from "@/components/navbar"
+import { Navbar } from "@/components/nav/navbar"
 import { Button } from "@/components/ui/button"
 import { Heart, ShoppingBag, ArrowLeft } from "lucide-react"
 import Image from "next/image"

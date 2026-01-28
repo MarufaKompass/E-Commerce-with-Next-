@@ -10,7 +10,7 @@
   --card-foreground: oklch(0.15 0.01 45);
   --popover: oklch(0.98 0.01 45);
   --popover-foreground: oklch(0.15 0.01 45);
-  --primary: oklch(0.25 0.02 45); /* Deep charcoal/brown */
+  --primary:#2E7D32; /* Deep charcoal/brown */
   --primary-foreground: oklch(0.98 0.01 45);
   --secondary: oklch(0.92 0.01 45);
   --secondary-foreground: oklch(0.25 0.02 45);
@@ -129,4 +129,6 @@
   h4 {
     @apply font-serif;
   }
+  
 }
+

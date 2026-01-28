@@ -1,35 +1,15 @@
 import Link from "next/link"
-import { Navbar } from "@/components/navbar"
+import { Navbar } from "@/components/nav/navbar"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, ChevronLeft, ChevronRight, Instagram } from "lucide-react"
 import Image from "next/image"
+
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-screen flex flex-col items-center justify-center px-6 pt-20 text-center overflow-hidden">
-        <div className="max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <h1 className="text-5xl md:text-8xl font-serif leading-[1.1] mb-8 text-balance">
-            Optimal organization meets exquisite design
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 text-pretty font-light">
-            Transform your living spaces into functional works of art with our curated collection of artisanal
-            furnishings.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto px-12 py-8 text-base uppercase tracking-widest">
-              Explore Collection
-            </Button>
-          </div>
-        </div>
-
-        {/* Decorative Image/Scroll Indicator */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
-          <span className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Scroll to reveal</span>
-          <div className="w-[1px] h-12 bg-border animate-bounce" />
-        </div>
-      </section>
+    {/* <HeroSlider></HeroSlider> */}
 
       {/* Collections Section */}
       <section className="px-6 py-24 md:py-32 bg-secondary/20">
@@ -47,7 +27,7 @@ export default function Home() {
               { title: "Sculptural Lighting", count: "15 Items", image: "/sculptural-pendant-light.jpg" },
             ].map((collection, i) => (
               <div key={i} className="group cursor-pointer">
-                <div className="relative aspect-[3/4] overflow-hidden bg-muted mb-6">
+                <div className="relative aspect-3/4 overflow-hidden bg-muted mb-6">
                   <Image
                     src={collection.image || "/placeholder.svg"}
                     alt={collection.title}

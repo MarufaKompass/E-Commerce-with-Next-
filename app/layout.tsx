@@ -3,7 +3,8 @@ import type { Metadata } from "next"
 import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import { Navbar } from "@/components/navbar"
+import { Navbar } from "@/components/nav/navbar"
+import TopNav from "@/components/nav/topNav"
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="font-sans antialiased selection:bg-primary selection:text-primary-foreground">
-        <Navbar />
+        <TopNav></TopNav>
         {children}
         <Analytics />
       </body>

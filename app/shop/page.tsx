@@ -1,4 +1,4 @@
-import { Navbar } from "@/components/navbar"
+import { Navbar } from "@/components/nav/navbar"
 import { Button } from "@/components/ui/button"
 import { products } from "@/lib/data"
 import { Filter } from "lucide-react"
