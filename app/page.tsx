@@ -1,18 +1,30 @@
-import Link from "next/link"
-import { Navbar } from "@/components/nav/navbar"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, ChevronLeft, ChevronRight, Instagram } from "lucide-react"
-import Image from "next/image"
+"use client"
+import Banner from "@/features/dashboard/components/banner/banner"
+import Footer from "@/features/dashboard/components/footer/footer"
+import Benefits from "@/features/dashboard/components/benefits/benefits"
+import { useCategoryViewModel } from "@/logicViewModal/useCategoryViewModel"
+import ProductList from "@/features/dashboard/components/product/productList"
+import BestSeller from "@/features/dashboard/components/bestSeller/bestSeller"
+import CategoryList from "@/features/dashboard/components/category/categoryList"
+import HeroSection from "@/features/dashboard/components/heroSection/heroSection"
+import SecondaryBanner from "@/features/dashboard/components/secondaryBanner/secondaryBanner"
 
 
 export default function Home() {
+  const vm = useCategoryViewModel();
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-    {/* <HeroSlider></HeroSlider> */}
-
+      <HeroSection></HeroSection>
+      <CategoryList {...vm}></CategoryList>
+      <Banner></Banner>
+      <ProductList {...vm}></ProductList>
+      <BestSeller {...vm}></BestSeller>
+      <SecondaryBanner></SecondaryBanner>
+      <Benefits></Benefits>
+      <Footer></Footer>
       {/* Collections Section */}
-      <section className="px-6 py-24 md:py-32 bg-secondary/20">
+      {/* <section className="px-6 py-24 md:py-32 bg-secondary/20">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">The Collections</h2>
@@ -43,10 +55,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonial / Recognition */}
-      <section className="px-6 py-32 border-y border-border">
+      {/* <section className="px-6 py-32 border-y border-border">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[10px] uppercase tracking-[0.4em] text-muted-foreground mb-12">Recognition</p>
           <div className="relative">
@@ -60,10 +72,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Immersive Banner */}
-      <section className="relative h-[80vh] flex items-center justify-start overflow-hidden group">
+      {/* <section className="relative h-[80vh] flex items-center justify-start overflow-hidden group">
         <Image
           src="/luxury-home-decor.jpg"
           alt="Interior Design"
@@ -82,10 +94,10 @@ export default function Home() {
             Explore Journal
           </Button>
         </div>
-      </section>
+      </section> */}
 
       {/* Instagram Feed / Social */}
-      <section className="px-6 py-24 md:py-32">
+      {/* <section className="px-6 py-24 md:py-32">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
             <div>
@@ -116,14 +128,14 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Featured Grid */}
-      <section className="px-6 py-24 md:py-32 border-t border-border">
+      {/* <section className="px-6 py-24 md:py-32 border-t border-border">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {/* Item 1 */}
+
           <div className="flex flex-col gap-6 group cursor-pointer">
-            <div className="relative aspect-[4/5] overflow-hidden bg-muted">
+            <div className="relative aspect-4/5 overflow-hidden bg-muted">
               <Image
                 src="/minimalist-furniture-dark-wood.jpg"
                 alt="Product"
@@ -142,9 +154,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Item 2 - Larger center piece */}
+  
           <div className="flex flex-col gap-6 group cursor-pointer lg:mt-12">
-            <div className="relative aspect-[4/5] overflow-hidden bg-muted">
+            <div className="relative aspect-4/5 overflow-hidden bg-muted">
               <Image
                 src="/modern-closet-design.jpg"
                 alt="Product"
@@ -163,9 +175,9 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Item 3 */}
+
           <div className="flex flex-col gap-6 group cursor-pointer lg:mt-24">
-            <div className="relative aspect-[4/5] overflow-hidden bg-muted">
+            <div className="relative aspect-4/5 overflow-hidden bg-muted">
               <Image
                 src="/luxury-home-decor.jpg"
                 alt="Product"
@@ -184,10 +196,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer / Newsletter */}
-      <footer className="border-t border-border mt-24 px-6 py-24 bg-secondary/30">
+      {/* <footer className="border-t border-border mt-24 px-6 py-24 bg-secondary/30">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
           <div className="md:col-span-4">
             <h2 className="text-3xl font-serif mb-6">Stay Inspired</h2>
@@ -254,7 +266,7 @@ export default function Home() {
             &copy; 2025 LUXE CREATIONS. ALL RIGHTS RESERVED.
           </p>
         </div>
-      </footer>
+      </footer> */}
     </main>
   )
 }
