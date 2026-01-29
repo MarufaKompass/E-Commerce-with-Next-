@@ -1,9 +1,9 @@
 "use client"
 
-import { Minus, Plus, ShoppingBag, Trash2 } from "lucide-react"
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Minus, Plus, ShoppingBag, Trash2 } from "lucide-react"
 
 interface CartItem {
     id: string
@@ -55,7 +55,7 @@ export default function page() {
     return (
         <div className="min-h-screen bg-background">
             {/* Header */}
-            <header className=" mt-24">
+            <header className=" pt-32">
                 <div className="container mx-auto px-4 py-6 flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <ShoppingBag className="w-7 h-7 text-foreground" />
@@ -84,7 +84,7 @@ export default function page() {
                                     >
                                         <div className="flex gap-6">
                                             {/* Product Image */}
-                                            <div className="flex-shrink-0">
+                                            <div className="shrink-0">
                                                 <img
                                                     src={item.image || "/placeholder.svg"}
                                                     alt={item.name}
