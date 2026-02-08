@@ -18,9 +18,9 @@ export default function TopNav() {
       <div className="container mx-auto  " >
         <nav className="py-6">
           <div className="flex items-center justify-between">
-            <div>
+            <Link href="/">
               <Image src={logo} alt="logo" width={150} height={100} />
-            </div>
+            </Link>
             <div className="flex items-center gap-4">
 
               <div className="">
