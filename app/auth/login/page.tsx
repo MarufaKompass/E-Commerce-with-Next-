@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
-export default function LoginPage() {
+export default function page() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-6 flex flex-col items-center justify-center bg-[#FDFCFB]">
       <div className="w-full max-w-md space-y-12">

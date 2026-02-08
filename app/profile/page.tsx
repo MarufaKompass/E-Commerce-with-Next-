@@ -1,5 +1,5 @@
-import { ProfileHeader } from "@/components/profile/profile-header"
-import { ProfileTabs } from "@/components/profile/profile-tabs"
+import { ProfileHeader } from "@/features/dashboard/components/profile/profile-header"
+import { ProfileTabs } from "@/features/dashboard/components/profile/profile-tabs"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
